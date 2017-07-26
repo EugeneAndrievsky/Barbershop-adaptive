@@ -4,6 +4,7 @@
     <meta charset="utf-8">
   </head>
   <body>
+   
     <header class="page-header">
       <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
       <div class="page-header__logo">
@@ -25,5 +26,62 @@
         </div>
       </nav>
     </header>
+    
+    <section class="stats">
+      <header class="stats__header">
+        <h2 class="stats__title  visually-hidden">Статистика Барбершопа</h2>
+        <b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
+        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        <small class="stats__legend  stats__legend--top"><sup>*</sup> - приведенные даные ложь</small>
+      </header>      
+      <table class="stats__list">
+        <tr>
+          <td class="stats__value">1 500<sup>*</sup></td>
+          <td class="stats__field">рублей<br>вложений</td>
+        </tr>
+        <tr>
+          <td class="stats__value">7 200</td>
+          <td class="stats__field">секунд<br> времени мастера</td>
+        </tr>
+        <tr>
+          <td class="stats__value">90 000</td>
+          <td class="stats__field">постриженных<br> волос</td>
+        </tr>
+        <tr>
+          <td class="stats__value">500 000<sup>*</sup></td>
+          <td class="stats__field">лайков<br> и комментов</td>
+        </tr>
+      </table>
+      <small class="stats__legend  stats__legend--bottom"><sup>*</sup> - приведенные даные ложь</small>
+    </section>
+    
+    <section class="advantages">
+      <div class="advantages__wrapper  slider">
+        <h2 class="advantages__title  visually-hidden">Наши преимущества</h2>
+        <input class="slider__input" type="radio" name="advantages" id="advantages-input-1" checked>
+        <input class="slider__input" type="radio" name="advantages" id="advantages-input-2">
+        <input class="slider__input" type="radio" name="advantages" id="advantages-input-3">
+        <ul class="advantages__list">
+          <li class="advantages__item  advantages__item--fast  slider__item">
+            <h3 class="advantages__item-title">Быстро</h3>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы счастливый обладатель стрижки-минутки</p>
+          </li>
+          <li  class="advantages__item  advantages__item--expensive  slider__item">
+            <h3 class="advantages__item-title">Дорого</h3>
+            <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне. </p>
+          </li>
+          <li  class="advantages__item  advantages__item--cool  slider__item">
+            <h3 class="advantages__item-title">Круто</h3>
+            <p>Наши мастера - профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не дает  определенный статус?</p>
+          </li>
+        </ul>
+        <div class="advantages__toggle  slider__toggles">
+          <label class="slider__toggle" for="advantages-input-1">1</label>
+          <label class="slider__toggle" for="advantages-input-2">2</label>
+          <label class="slider__toggle" for="advantages-input-3">3</label>
+        </div>
+      </div>      
+    </section>
+    
   </body>
 </html>
