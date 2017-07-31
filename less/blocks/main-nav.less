@@ -1,0 +1,49 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list,
+.main-nav__user-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+@media @tablet-widths{
+  
+  .main-nav {
+    width: auto;
+    min-height: 70px;
+    margin: 0;
+  }
+  
+  .main-nav__wrapper {
+    .container();
+    .clearfix();
+  }
+  
+  .main-nav__list {
+    float: left;
+    width: 570px;
+  }
+  
+  .main-nav__user-list {
+    float: right;
+    width: 60px;
+  }
+  
+}
+
+@media @desktop {
+  
+  .main-nav__list {
+    width: 780px;
+  }
+  
+  .main-nav__user-list {
+    width: 160px;
+  }
+  
+}
