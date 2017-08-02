@@ -1,6 +1,99 @@
 .main-nav {
+  
+  position: relative;
+  
   width: 320px;
   margin: 0 auto;
+  
+  background-color: #826550;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  
+  display: block;
+  width: 70px;
+  height: 50px;
+  
+  font-size: 0;
+  
+  background-color: #6a4d38;
+  cursor: pointer;
+  
+  border: none;
+  
+  &:hover {
+    background-color: #624530;
+  }
+  
+  &:active {
+    background-color: #624530;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  
+  width: 36px;
+  height: 2px;
+  
+  background-color: #fff;
+  box-shadow: 0 8px 0 0 #fff,
+              0 16px 0 0 #fff;
+}
+
+.main-nav--closed .main-nav__toggle:active::before { 
+  
+  background-color: rgba(255,255,255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255,255,255, 0.3),
+              0 16px 0 0 rgba(255,255,255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+  
+  &::before,
+  &::after {
+  
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+  
+    width: 36px;
+    height: 2px;
+  
+    background-color: #fff;
+  }
+  
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  
+  &::after {
+    transform: rotate(-45deg);    
+  }
+  
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255,255,255, 0.3);
+  }
+}
+
+.main-nav--closed .main-nav__toggle:active::before { 
+  
+  background-color: rgba(255,255,255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255,255,255, 0.3),
+              0 16px 0 0 rgba(255,255,255, 0.3);
 }
 
 .main-nav__list,
