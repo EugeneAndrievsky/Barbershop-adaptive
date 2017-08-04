@@ -12,17 +12,24 @@
 @media @tablet-widths {
   
   .page-header {
-    position: relative;
+   /* position: relative;*/
     
-    padding-bottom: 400px;
+    display: flex;
+    flex-direction: column;    
+    
+    /*padding-bottom: 400px;*/
     
     background-color: #000;
   }
   
   .page-header__logo {
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
     
+    order: 2;
+    
+    position: relative;
+        
     width: 100%;
     height: 400px;
     
@@ -35,13 +42,13 @@
 
 @media @desktop-widths {
   .page-header {    
-    padding-bottom: 648px;
+    /*padding-bottom: 648px;*/
   }
   
   .page-header__logo {    
     height: 648px;
     
-    background-position: center;
+    background-position: center 0px;
     background-size: cover;
   }
   
