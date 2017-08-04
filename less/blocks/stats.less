@@ -50,8 +50,7 @@
   
   &--top {
     display: none;
-  }
-  
+  }  
 }
 
 .stats__legend sup {
@@ -229,8 +228,33 @@
   .stats__header {
     float: left;
     width: 240px;
+    min-height: 263px;
     padding-left: 40px;
     padding-right: 40px;
+    
+    &::before {
+      top: 22px;
+    }
+  }
+  
+  .stats__slogan {
+    float: none;
+    width: auto;
+    margin-bottom: 42px;
+    padding-left: 0;
+  }  
+  
+  .stats__intro {
+    float: none;
+    width: auto;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  
+  .stats__legend--top {
+    float: none;
+    width: auto;    
+    padding-left: 0;
   }
   
   .stats__items {
