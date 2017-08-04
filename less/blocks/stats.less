@@ -1,5 +1,5 @@
 .stats {
-  .container();
+  .container-fluid();
 }
 
 .stats__header {
@@ -121,13 +121,15 @@
   }
   
   .stats__header {
-    .clearfix();
+    /*.clearfix();*/
     
     position: relative;
     
-    min-height: 129px;
-    padding: 0;
-    padding-top: 31px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        
+    padding: 31px 40px;
     padding-bottom: 24px;
     
     &:before {
@@ -143,9 +145,10 @@
   }
   
   .stats__slogan {
-    float: left;
+    width: 50%;
+    /*float: left;
     width: 280px;
-    padding-left: 40px;
+    padding-left: 40px;*/
     margin-bottom: 20px;
     
     font-size: 40px;
@@ -155,20 +158,26 @@
   }
   
   .stats__intro {
-    float: right;
-    width: 210px;
+    /*float: right;
+    width: 210px;*/
+    
+    width: 37.5%;
     padding: 0;
-    padding-right: 80px;
+    /*padding-right: 80px;*/
+    padding-left: 30px;
+    padding-top: 4px;
     
     text-align: left;
   }
   
   .stats__legend--top {
     display: block;
-    float: left;
+    width: 50%;
+    
+    /*float: left;
     clear: left;
     width: 280px;
-    padding-left: 40px;
+    padding-left: 40px;*/
     
     color: rgba(0,0,0,0.3);
   }
@@ -178,15 +187,25 @@
   }
   
   .stats__list {
-    .clearfix();
+    /*.clearfix();*/
     
     display: block;
   }
   
-  .stats__list tr {
-    display: block;
-    float: left;
-    width: 250px;
+  .stats__list tbody {    
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .stats__list tr {    
+    display: block;    
+    
+   /* float: left;
+    width: 250px;*/
+    
+    box-sizing: border-box;
+    width: 50%;
+    
     padding: 25px 35px;
     padding-bottom: 28px;
   }
@@ -219,16 +238,20 @@
 
 @media @desktop-widths {
   
-  .stats{
-    .clearfix();
+  .stats {
+    /*.clearfix();*/
+    
+    display: flex;
     
     margin-top: -159px;
   }
   
   .stats__header {
-    float: left;
+    /*float: left;*/
+    
+    flex-direction: column;
+    flex-grow: 1;
     width: 240px;
-    min-height: 263px;
     padding-left: 40px;
     padding-right: 40px;
     
@@ -238,29 +261,33 @@
   }
   
   .stats__slogan {
-    float: none;
+    /*float: none;*/
     width: auto;
     margin-bottom: 42px;
-    padding-left: 0;
+    /*padding-left: 0;*/
   }  
   
   .stats__intro {
-    float: none;
+    /*float: none;*/
     width: auto;
     margin-bottom: 32px;
     padding: 0;
   }
   
   .stats__legend--top {
-    float: none;
+    /*float: none;*/
     width: auto;    
-    padding-left: 0;
+    /*padding-left: 0;*/
+    margin-top: auto;
   }
   
-  .stats__items {
-    float: right;
-    display: block;
-    width: 640px;
+  .stats__list {
+   /* float: right;
+    display: block;*/
+    
+    display: flex;
+    flex-grow: 1;
+    width: 640px;    
   }
   
 }
