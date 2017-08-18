@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "gulp serve"
+    "start": "npm run build && gulp serve"
   },
   "engines": {
     "node": "6.11.1"
