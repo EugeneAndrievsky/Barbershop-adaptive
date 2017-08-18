@@ -71,8 +71,13 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html")
+  gulp.watch("*.html", ["copy-html"])
     .on("change", server.reload);
+});
+
+gulp.task("copy-html", function () {
+  return gulp.src("*.html")
+    .pipe(gulp.dest("build"));
 });
 
 
