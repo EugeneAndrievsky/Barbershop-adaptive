@@ -1,15 +1,34 @@
 .advantages__wrapper {
-  .container();
+  .container-fluid();
+  
+  position: relative;
   
 //  padding-top: 30px;
 }
 
-.advantages__list {
+.advantages__list {  
   margin: 0;
   padding: 0;
   
   list-style: none;
 }
+
+.advantages__wrapper::after { 
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  content: "";
+  
+  width: 100%;
+  height: 35px;
+  
+  background-image: linear-gradient(to top right, transparent 48%, #c3deef 2%, @bg-darkgray 50%),
+                    linear-gradient(to top left, transparent 48%, #c3deef 2%, @bg-darkgray 50%);
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: 50.1% 100%;
+}  
+
 
 .advantages__item {
   margin-bottom: 23px;
@@ -25,15 +44,15 @@
     background-repeat: no-repeat;
     background-position: center 30px;
   }
-  
-  &--expensive {
-    background-image: url("../../img/advantage-exp.svg");
+    
+  &--cool {
+    background-image: url("../../img/advantage-cool.svg");
     background-repeat: no-repeat;
     background-position: center 30px;
   }
   
-  &--cool {
-    background-image: url("../../img/advantage-cool.svg");
+  &--expensive {
+    background-image: url("../../img/advantage-exp.svg");
     background-repeat: no-repeat;
     background-position: center 30px;
   }
@@ -74,11 +93,16 @@
 @media @tablet-widths {
   
   .advantages__wrapper {
-    padding-top: 42px;
+    padding-top: 47px;
+  }
+  
+  .advantages__wrapper::after {
+    height: 43px;  
+    bottom: -43px; 
   }
   
   .advantages__list {
-    padding-bottom: 4px;
+    padding-bottom: 4px;    
   }
   
   .advantages__item {
@@ -86,7 +110,11 @@
     margin-bottom: 40px;
     padding: 0;
     padding-bottom: 39px;
-    padding-left: 128px;
+    padding-left: 130px;
+    
+    text-align: left;
+    
+    background-position: 3px 3px;
   }
   
   .advantages__item:nth-child(n+2) {
@@ -95,6 +123,17 @@
   
   .advantages__item:last-child {
     margin-bottom: 0;
+  }
+  
+  .advantages__item-title {
+    margin-top: 0;
+    margin-bottom: 14px;
+    
+    text-align: left;
+  }
+  
+  .advantages__toggle {
+    display: none;
   }
   
 }
