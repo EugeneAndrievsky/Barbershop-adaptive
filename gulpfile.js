@@ -61,6 +61,12 @@ gulp.task("symbols", function() {
 });
 
 
+gulp.task("copy-html", function () {
+  return gulp.src("*.html")
+    .pipe(gulp.dest("build"));
+});
+
+
 gulp.task("serve", function() {
   server.init({
     server: "build",
@@ -73,11 +79,6 @@ gulp.task("serve", function() {
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html", ["copy-html"])
     .on("change", server.reload);
-});
-
-gulp.task("copy-html", function () {
-  return gulp.src("*.html")
-    .pipe(gulp.dest("build"));
 });
 
 
