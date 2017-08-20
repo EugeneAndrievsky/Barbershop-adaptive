@@ -149,7 +149,11 @@
           
           <blockquote class="reviews__item  slider__item">
             <div class="reviews__author-foto">
-              <img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Джона Смита">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
+                <img src="img/travis-mobile.png" width="50" height="50" alt="Фото Джона Смита">
+              </picture>                    
             </div>
             <cite class="reviews__author-name">Джон Смит</cite>
             <p>Отличную стрижку мне сделали ребята!</p>
@@ -157,11 +161,15 @@
           
           <blockquote class="reviews__item  slider__item">
             <div class="reviews__author-foto">
-              <img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
+                <img src="img/travis-mobile.png" width="50" height="50" alt="Фото Ивана Бородайло">
+              </picture>                    
             </div>
             <cite class="reviews__author-name">Иван Бородайло</cite>
             <p>В Бородинском ваша борода в надежных руках!</p>
-          </blockquote>
+          </blockquote>         
           
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>          
           <button class="reviews__next" type="button">Следующий отзыв</button>          
@@ -181,9 +189,8 @@
       <div class="page-footer__wrapper">
        
         <p class="page-footer__contacts">
-          <b>Барбершоп Бородинский</b><br>
-          г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>+7 (812) 555-66-66</a>
+          <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная, 19/8<br>
+          <a class="btn" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>+7 (812) 555-66-66</a>
         </p>
         
         <p class="page-footer__social">
@@ -196,7 +203,7 @@
         
         <p class="page-footer__copyright">
          Разработано:
-         <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru"></a>          
+         <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru">Html Academy</a>          
         </p>
         
       </div>
