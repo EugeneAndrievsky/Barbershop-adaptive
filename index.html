@@ -190,11 +190,12 @@
        
         <p class="page-footer__contacts">
           <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная, 19/8<br>
-          <a class="btn" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>+7 (812) 555-66-66</a>
+          <a class="btn" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.: </span>+7 (812) 555-66-66</a>
         </p>
         
         <p class="page-footer__social">
           <span class="social-links">
+            <span class="social-links__friend">Давайте дружить!</span>
             <a class="social-link  social-link--vk " href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
             <a class="social-link  social-link--fb " href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
             <a class="social-link  social-link--in " href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
@@ -211,9 +212,9 @@
     
     <script>
       var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+      var navToggle = document.querySelector('.main-nav__toggle');     
       
-      navMain.classList.remove('main-nav--nojs');
+      navMain.classList.remove('main-nav--nojs');     
       
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('main-nav--closed')) {

@@ -55,6 +55,91 @@
     color: white;
     background-color: @bg-darkgray;
     border-color: @darkgray;
+  }  
+}
+
+@media @tablet-widths {  
+  
+  .page-footer__wrapper {
+    position: relative;
+  }
+  
+  .page-footer__contacts {    
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 0;
+  
+    text-align: left;
+    
+    b {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }  
+    
+    a {
+      position: static;
+      display: inline;
+      border: none;
+      background: none;
+      text-transform: none;
+      font-weight: normal;
+    }
+  }
+  
+  .page-footer__contacts-hidden {
+    display: inline;     
+  }
+  
+  .page-footer__copyright {
+    position: absolute;
+    right: 37px;
+    top: -17px;
+  
+    &-link {
+      position: absolute;
+      top: 40px;
+      left: auto;
+      right: -40px;
+      width: 160px;    
+    
+      color: white;
+      background-color: @bg-darkgray;
+      border-color: @darkgray;
+    }  
   }
   
 }
+
+@media @desktop-widths {
+  
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .page-footer__social {
+    margin-top: 10px;
+  }
+  
+  .page-footer__copyright {
+    position: static;    
+    margin-top: 10px;    
+  
+    &-link {
+      position: static;   
+      margin-top: 15px;
+      
+    }  
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
