@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var seq = require("gulp-sequence");
 var del = require("del");
+var ghPages = require('gulp-gh-pages');
 
 
 gulp.task("style", function() {
@@ -109,4 +110,10 @@ gulp.task("build", function(cb) {
     "symbols", 
     cb
   );
+});
+
+
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*")
+    .pipe(ghPages());
 });
