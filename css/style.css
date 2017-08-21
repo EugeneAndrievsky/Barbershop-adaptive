@@ -704,13 +704,13 @@ img {
   background-position: center 30px;
 }
 .advantages__item--fast {
-  background-image: url("../../img/advantage-fast.svg");
+  background-image: url("../img/advantage-fast.svg");
 }
 .advantages__item--cool {
-  background-image: url("../../img/advantage-cool.svg");
+  background-image: url("../img/advantage-cool.svg");
 }
 .advantages__item--expensive {
-  background-image: url("../../img/advantage-exp.svg");
+  background-image: url("../img/advantage-exp.svg");
 }
 .advantages__item:nth-child(n+2) {
   display: none;
