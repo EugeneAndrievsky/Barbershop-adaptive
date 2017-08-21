@@ -942,15 +942,15 @@ img {
   background-position: 50% 50%;
 }
 .social-link--vk {
-  background-image: url("../../img/vk-icon-big.png");
+  background-image: url("../img/vk-icon-big.png");
   background-size: 30% ;
 }
 .social-link--fb {
-  background-image: url("../../img/facebook-icon-big.png");
+  background-image: url("../img/facebook-icon-big.png");
   background-size: 20% ;
 }
 .social-link--in {
-  background-image: url("../../img/insta-icon-big.png");
+  background-image: url("../img/insta-icon-big.png");
   background-size: 40% ;
 }
 @media (min-width: 768px) {
@@ -1297,14 +1297,14 @@ img {
   .reviews__prev {
     top: -1px;
     left: -50px;
-    background-image: url("../../img/left-arrow.png");
+    background-image: url("../img/left-arrow.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
   .reviews__next {
     top: -1px;
     right: -50px;
-    background-image: url("../../img/right-arrow.png");
+    background-image: url("../img/right-arrow.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
