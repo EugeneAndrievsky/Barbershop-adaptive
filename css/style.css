@@ -582,9 +582,8 @@ img {
   left: 21px;
   width: 16px;
   height: 16px;
-  background-image: url("img/icon-login.png");
-  background-position: ;
-  opacity: 0.3;
+  background-image: url("../img/icon-login-brown.png");
+  background-position: center;
 }
 .stats {
   width: auto;
@@ -1045,13 +1044,16 @@ img {
   .main-nav__user-login::before {
     top: 29px;
     left: 12px;
+    background-image: url("../img/icon-login.png");
+    opacity: .3;
   }
   .main-nav__user-login:hover::before {
-    background-position: ;
+    background-image: url("../img/icon-login-brown.png");
+    background-position: center;
     opacity: 1;
   }
   .main-nav__user-login:active::before {
-    background-position: ;
+    background-image: url("../img/icon-login.png");
     opacity: 0.3;
   }
   .stats {
@@ -1418,13 +1420,13 @@ img {
   .main-nav__user-login:active {
     color: rgba(0, 0, 0, 0.3);
     background-color: white;
-    opacity: 1;
   }
   .main-nav__user-login:hover::before {
-    background-position: ;
+    background-image: url("../img/icon-login-black.png");
+    opacity: .3;
   }
   .main-nav__user-login:active::before {
-    background-position: ;
+    background-image: url("../img/icon-login-black.png");
     opacity: 0.1;
   }
   .main-nav__user-login::before {
