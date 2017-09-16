@@ -31,6 +31,15 @@
     color: white;
     background-color: @bg-darkgray;
     border-color: @darkgray;
+    
+    &:hover {
+      border: 1px solid #545454;
+    }
+
+    &:active {     
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #252525;
+    }
   }
 }
 
@@ -55,6 +64,15 @@
     color: white;
     background-color: @bg-darkgray;
     border-color: @darkgray;
+    
+    &:hover {
+      border: 1px solid #545454;
+    }
+
+    &:active {     
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #252525;
+    }
   }  
 }
 
@@ -79,10 +97,20 @@
     a {
       position: static;
       display: inline;
+      padding: 0;
       border: none;
       background: none;
       text-transform: none;
       font-weight: normal;
+      
+      &:hover {
+        border: none;
+      }
+
+      &:active {     
+        color: white;
+        background-color: @bg-darkgray;
+      }
     }
   }
   
