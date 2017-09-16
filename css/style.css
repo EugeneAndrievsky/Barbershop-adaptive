@@ -769,6 +769,26 @@ img {
 .news__item p {
   margin-bottom: 0;
 }
+.news__item:hover p {
+  color: #826550;
+  text-decoration: underline;
+}
+.news__item:hover time {
+  background-color: #826550;
+}
+.news__item:hover time::after {
+  border-top-color: #826550;
+}
+.news__item:active p {
+  color: #6a4d38;
+}
+.news__item:active time {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #6a4d38;
+}
+.news__item:active time::after {
+  border-top-color: #6a4d38;
+}
 .news__item:nth-child(n+3) {
   display: none;
 }
@@ -804,6 +824,13 @@ img {
   display: block;
   margin-bottom: -10px;
   font-size: 30px;
+}
+.news__to-all:hover {
+  border: 1px solid #d5c9bd;
+}
+.news__to-all:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5c9bd;
 }
 .reviews {
   padding-top: 18px;
@@ -906,6 +933,13 @@ img {
   background-color: #292929;
   border-color: #3f3f3f;
 }
+.page-footer__contacts a:hover {
+  border: 1px solid #545454;
+}
+.page-footer__contacts a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #252525;
+}
 .page-footer__contacts-hidden {
   display: none;
 }
@@ -924,6 +958,13 @@ img {
   color: white;
   background-color: #292929;
   border-color: #3f3f3f;
+}
+.page-footer__copyright-link:hover {
+  border: 1px solid #545454;
+}
+.page-footer__copyright-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #252525;
 }
 .social-links {
   display: flex;
@@ -947,6 +988,22 @@ img {
 }
 .social-link--in {
   background-image: url("../img/insta-icon-big.png");
+}
+.social-link--vk:active {
+  background-image: url("../img/vk-icon-big-active.png");
+}
+.social-link--fb:active {
+  background-image: url("../img/facebook-icon-big-active.png");
+}
+.social-link--in:active {
+  background-image: url("../img/insta-icon-big-active.png");
+}
+.social-link:hover {
+  border: 1px solid #545454;
+}
+.social-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #252525;
 }
 @media (min-width: 768px) {
   .container-fluid {
@@ -1247,6 +1304,13 @@ img {
     right: 0;
     width: 160px;
   }
+  .reviews__write:hover {
+    border: 1px solid #d5c9bd;
+  }
+  .reviews__write:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5c9bd;
+  }
   .reviews__list {
     position: relative;
     box-sizing: border-box;
@@ -1292,6 +1356,18 @@ img {
     font-size: 0;
     background-color: #f8f5f2;
   }
+  .reviews__prev:hover,
+  .reviews__next:hover {
+    border: 1px solid #d5c9bd;
+  }
+  .reviews__prev:active,
+  .reviews__next:active {
+    background-color: #d5c9bd;
+  }
+  .reviews__prev:focus,
+  .reviews__next:focus {
+    outline: none;
+  }
   .reviews__prev {
     top: -1px;
     left: -50px;
@@ -1299,12 +1375,18 @@ img {
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+  .reviews__prev:active {
+    background-image: url("../img/left-arrow-active.png");
+  }
   .reviews__next {
     top: -1px;
     right: -50px;
     background-image: url("../img/right-arrow.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+  .reviews__next:active {
+    background-image: url("../img/right-arrow-active.png");
   }
   .page-footer__wrapper {
     width: 640px;
@@ -1325,10 +1407,18 @@ img {
   .page-footer__contacts a {
     position: static;
     display: inline;
+    padding: 0;
     border: none;
     background: none;
     text-transform: none;
     font-weight: normal;
+  }
+  .page-footer__contacts a:hover {
+    border: none;
+  }
+  .page-footer__contacts a:active {
+    color: white;
+    background-color: #292929;
   }
   .page-footer__contacts-hidden {
     display: inline;
@@ -1576,10 +1666,10 @@ img {
     height: 50px;
   }
   .social-link--vk {
-    background-size: 30% ;
+    background-size: 33% ;
   }
   .social-link--fb {
-    background-size: 20% ;
+    background-size: 18% ;
   }
   .social-link--in {
     background-size: 40% ;
