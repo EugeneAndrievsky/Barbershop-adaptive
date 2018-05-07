@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Photo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
+    <div class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп Бородинский">
+      </picture>
+    </div>
+
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a>Наши работы</a></li>
+          <li class="main-nav__item"><a href="form.html">Записаться</a></li>
+          <li class="main-nav__item"><a href="">Контакты</a></li>
+          <li class="main-nav__item"><a href="">Html academy</a></li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__user-item"><a class="main-nav__user-login" title="Войти" href="">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+
+  <section class="works">
+    <div class="works-wrapper">
+      <h2 class="works__header">Наши работы</h2>
+
+      <section class="work-card  work-card--best">
+        <div class="work-card__photo  work-card__photo--best">
+          <picture></picture>
+        </div>
+        <span class="work-card__label">Работа месяца</span>
+        <div class="work-card__desc">
+          <h3 class="work-card__header">Лжепётр Мчиславский</h3>
+          <p class="work-card__review">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+          <div class="work-card__services">
+            <span class="work-card__service">стрижка</span>
+            <span class="work-card__service">бритьё</span>
+            <span class="work-card__service">усы</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-card">
+        <div class="work-card__photo">
+          <picture></picture>
+        </div>
+        <div class="work-card__desc">
+          <h3 class="work-card__header">Саша Мальцев</h3>
+          <p class="work-card__review">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+          <div class="work-card__services">
+            <span class="work-card__service">стрижка</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-card">
+        <div class="work-card__photo">
+          <picture></picture>
+        </div>
+        <div class="work-card__desc">
+          <h3 class="work-card__header">Владимир Иваныч</h3>
+          <p class="work-card__review">К зимнему сезону &ndash; готов!</p>
+          <div class="work-card__services">
+            <span class="work-card__service">борода</span>
+            <span class="work-card__service">усы</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-card">
+        <div class="work-card__photo">
+          <picture></picture>
+        </div>
+        <div class="work-card__desc">
+          <h3 class="work-card__header">Винстон Синий</h3>
+          <p class="work-card__review">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+          <div class="work-card__services">
+            <span class="work-card__service">стрижка</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="price-list">
+    <h2 class="price-list__header">Прейскурант</h2>
+    <table class="price-list__table">
+      <tr class="price-list__row">
+        <td class="price-list__cell">1</td>
+        <td class="price-list__cell">Классическая стрижка</td>
+        <td class="price-list__cell">с мытьём головы</td>
+        <td class="price-list__cell">1 500 руб.</td>
+      </tr>
+      <tr>
+        <td class="price-list__cell">2</td>
+        <td class="price-list__cell">Современный вариант</td>
+        <td class="price-list__cell">с мытьём головы</td>
+        <td class="price-list__cell">1 500 руб.</td>
+      </tr>
+      <tr class="price-list__row">
+        <td class="price-list__cell">3</td>
+        <td class="price-list__cell">Индивидуальный подход</td>
+        <td class="price-list__cell">с мытьём головы</td>
+        <td class="price-list__cell">2 000 руб.</td>
+      </tr>
+      <tr class="price-list__row">
+        <td class="price-list__cell">4</td>
+        <td class="price-list__cell">Бритьё бороды</td>
+        <td class="price-list__cell">без мытья</td>
+        <td class="price-list__cell">1 500 руб.</td>
+      </tr>
+      <tr class="price-list__row">
+        <td class="price-list__cell">5</td>
+        <td class="price-list__cell">Бритьё головы</td>
+        <td class="price-list__cell">с мытьём головы</td>
+        <td class="price-list__cell">1 000 руб.</td>
+      </tr>
+    </table>
+    <div class="price-list__time">с 10:00 до 14:00 скидка 20%</div>
+  </section>
+  
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+      <p class="page-footer__contacts">
+        <b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная, 19/8<br>
+        <a class="btn" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.: </span>+7 (812) 555-66-66</a>
+      </p>
+
+      <p class="page-footer__social">
+        <span class="social-links">
+          <span class="social-links__friend">Давайте дружить!</span>
+          <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
+        </span>
+      </p>
+
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru">Html Academy</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add('main-nav--closed');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
