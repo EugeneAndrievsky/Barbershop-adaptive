@@ -1,0 +1,64 @@
+.price-list {
+
+}
+
+.price-list__wrapper {
+  .container();
+}
+
+.price-list__header {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: @font;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.price-list__table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: @font;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.price-list__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.price-list__cell {
+  width: 50%;
+
+  &:first-child {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    font-weight: 700;
+  }
+
+  &:nth-child(3) {
+    order: 2;
+  }
+}
+
+.price-list__time {
+
+  min-height: 75px;
+  padding-left: 100px;
+  padding-right: 50px;
+
+  border: 1px solid @border-darkgray;
+
+  background-image: url("https://placehold.it/58x57");
+  background-position: 20px center;
+  background-repeat: no-repeat;
+}

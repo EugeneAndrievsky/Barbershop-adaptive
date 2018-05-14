@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <title>Photo</title>
@@ -36,20 +36,23 @@
       </div>
     </nav>
   </header>
-  
+
 
   <section class="works">
-    <div class="works-wrapper">
+    <div class="works__wrapper">
       <h2 class="works__header">Наши работы</h2>
+      <a href="index.html" class="works__to-main  btn">На главную</a>
 
       <section class="work-card  work-card--best">
         <div class="work-card__photo  work-card__photo--best">
-          <picture></picture>
+          <picture>
+            <img src="https://placehold.it/280x480" alt="Фото Лжепетра Мчиславского">
+          </picture>
+          <span class="work-card__label">Работа месяца</span>
         </div>
-        <span class="work-card__label">Работа месяца</span>
         <div class="work-card__desc">
           <h3 class="work-card__header">Лжепётр Мчиславский</h3>
-          <p class="work-card__review">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+          <p class="work-card__review">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Ещё раз спасибо и до скорого!</p>
           <div class="work-card__services">
             <span class="work-card__service">стрижка</span>
             <span class="work-card__service">бритьё</span>
@@ -60,7 +63,9 @@
 
       <section class="work-card">
         <div class="work-card__photo">
-          <picture></picture>
+          <picture>
+            <img src="https://placehold.it/280x176" alt="Фото Саши Мальцева">
+          </picture>
         </div>
         <div class="work-card__desc">
           <h3 class="work-card__header">Саша Мальцев</h3>
@@ -73,7 +78,9 @@
 
       <section class="work-card">
         <div class="work-card__photo">
-          <picture></picture>
+          <picture>
+            <img src="https://placehold.it/280x176" alt="Фото Владимира Ивановича">
+          </picture>
         </div>
         <div class="work-card__desc">
           <h3 class="work-card__header">Владимир Иваныч</h3>
@@ -87,7 +94,9 @@
 
       <section class="work-card">
         <div class="work-card__photo">
-          <picture></picture>
+          <picture>
+            <img src="https://placehold.it/280x176" alt="Фото Винстона Синего">
+          </picture>
         </div>
         <div class="work-card__desc">
           <h3 class="work-card__header">Винстон Синий</h3>
@@ -101,42 +110,44 @@
   </section>
 
   <section class="price-list">
-    <h2 class="price-list__header">Прейскурант</h2>
-    <table class="price-list__table">
-      <tr class="price-list__row">
-        <td class="price-list__cell">1</td>
-        <td class="price-list__cell">Классическая стрижка</td>
-        <td class="price-list__cell">с мытьём головы</td>
-        <td class="price-list__cell">1 500 руб.</td>
-      </tr>
-      <tr>
-        <td class="price-list__cell">2</td>
-        <td class="price-list__cell">Современный вариант</td>
-        <td class="price-list__cell">с мытьём головы</td>
-        <td class="price-list__cell">1 500 руб.</td>
-      </tr>
-      <tr class="price-list__row">
-        <td class="price-list__cell">3</td>
-        <td class="price-list__cell">Индивидуальный подход</td>
-        <td class="price-list__cell">с мытьём головы</td>
-        <td class="price-list__cell">2 000 руб.</td>
-      </tr>
-      <tr class="price-list__row">
-        <td class="price-list__cell">4</td>
-        <td class="price-list__cell">Бритьё бороды</td>
-        <td class="price-list__cell">без мытья</td>
-        <td class="price-list__cell">1 500 руб.</td>
-      </tr>
-      <tr class="price-list__row">
-        <td class="price-list__cell">5</td>
-        <td class="price-list__cell">Бритьё головы</td>
-        <td class="price-list__cell">с мытьём головы</td>
-        <td class="price-list__cell">1 000 руб.</td>
-      </tr>
-    </table>
-    <div class="price-list__time">с 10:00 до 14:00 скидка 20%</div>
+    <div class="price-list__wrapper">
+      <h2 class="price-list__header">Прейскурант</h2>
+      <div class="price-list__table">
+        <div class="price-list__row">
+          <div class="price-list__cell">1</div>
+          <div class="price-list__cell">Классическая стрижка</div>
+          <div class="price-list__cell"><span>(</span>с мытьём головы<span>)</span></div>
+          <div class="price-list__cell">1 500 руб.</div>
+        </div>
+        <div class="price-list__row">
+          <div class="price-list__cell">2</div>
+          <div class="price-list__cell">Современный вариант</div>
+          <div class="price-list__cell"><span>(</span>с мытьём головы<span>)</span></div>
+          <div class="price-list__cell">1 500 руб.</div>
+        </div>
+        <div class="price-list__row">
+          <div class="price-list__cell">3</div>
+          <div class="price-list__cell">Индивидуальный подход</div>
+          <div class="price-list__cell"><span>(</span>с мытьём головы<span>)</span></div>
+          <div class="price-list__cell">2 000 руб.</div>
+        </div>
+        <div class="price-list__row">
+          <div class="price-list__cell">4</div>
+          <div class="price-list__cell">Бритьё бороды</div>
+          <div class="price-list__cell"><span>(</span>без мытья<span>)</span></div>
+          <div class="price-list__cell">1 500 руб.</div>
+        </div>
+        <div class="price-list__row">
+          <div class="price-list__cell">5</div>
+          <div class="price-list__cell">Бритьё головы</div>
+          <div class="price-list__cell"><span>(</span>с мытьём головы<span>)</span></div>
+          <div class="price-list__cell">1 000 руб.</div>
+        </div>
+      </div>
+      <div class="price-list__time">с 10:00 до 14:00 скидка 20%</div>
+    </div>
   </section>
-  
+
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -163,22 +174,7 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.remove('main-nav--opened');
-        navMain.classList.add('main-nav--closed');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 
