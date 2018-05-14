@@ -1,31 +1,33 @@
 {
-  "name": "barbershop",
-  "version": "0.1.0",
-  "private": true,
-  "description": "",
+  "name": "barbershop-adaptive",
+  "version": "1.0.0",
+  "browserslist": [
+    "last 2 versions",
+    "IE 10-11",
+    "Firefox ESR"
+  ],
   "devDependencies": {
-    "autoprefixer": "^6.7.7",
-    "browser-sync": "^2.18.2",
-    "css-mqpacker": "^6.0.1",
+    "autoprefixer": "^8.1.0",
+    "browser-sync": "^2.23.6",
+    "css-mqpacker": "^6.0.2",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-less": "^3.3.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.2.0",
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
-    "gulp-sequence": "^0.4.6",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-svgstore": "^6.1.0",
-    "postcss-reporter": "^5.0.0"
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webp": "^3.0.0",
+    "posthtml-include": "^1.1.0"
   },
   "scripts": {
+    "editorconfig": "edicorconfig-cli",
+    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
-  },
-  "engines": {
-    "node": "6.11.1"
   }
 }

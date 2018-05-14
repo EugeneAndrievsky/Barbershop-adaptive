@@ -1,12 +1,13 @@
 .DS_Store
 .idea
 .publish/
+build/
+css/
+node_modules/
 *.ai
 *.log
 *.pdf
 *.psd
-*.sublime*
-css/*.css
-node_modules/
-build/
+*.txt
+mix-manifest.json
 Thumbs.db
