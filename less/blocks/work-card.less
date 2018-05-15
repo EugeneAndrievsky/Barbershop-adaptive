@@ -50,3 +50,66 @@
 .work-card__survice {
 
 }
+
+
+@media @tablet-widths {
+
+  .work-card {
+
+
+    &--best {
+
+    }
+  }
+
+  .work-card__wrapper {
+    display: flex;
+    padding-top: 40px;
+
+    &--best {
+      padding-top: 0;
+    }
+  }
+
+  .work-card__photo {
+    flex-shrink: 0;
+    width: 270px;
+    min-height: 293px; //time
+
+    &--best {
+
+    }
+  }
+
+}
+
+
+@media @desktop-widths {
+  .work-card {
+    width: 294px;
+
+    &--best {
+      width: 100%;
+    }
+  }
+
+.work-card__wrapper {
+
+    flex-direction: column;
+    padding-top: 0;
+
+    &--best {
+      flex-direction: row;
+    }
+}
+
+  .work-card__photo {
+
+    min-height: 480x; //time
+
+    &--best {
+      width: 480px;
+      min-height: 293px; //time
+    }
+  }
+}

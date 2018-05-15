@@ -1,5 +1,6 @@
 .price-list {
-
+  color: #ffffff;
+  background-color: #353535;
 }
 
 .price-list__wrapper {
@@ -35,23 +36,29 @@
 }
 
 .price-list__cell {
-  width: 50%;
+  width: 70%;
 
-  &:first-child {
+  &:nth-child(1) {
     display: none;
   }
 
   &:nth-child(2) {
+
     font-weight: 700;
   }
 
   &:nth-child(3) {
     order: 2;
   }
+
+  &:nth-child(4) {
+    width: 30%;
+    text-align: right;
+  }
 }
 
 .price-list__time {
-
+  box-sizing: border-box;
   min-height: 75px;
   padding-left: 100px;
   padding-right: 50px;
@@ -61,4 +68,72 @@
   background-image: url("https://placehold.it/58x57");
   background-position: 20px center;
   background-repeat: no-repeat;
+}
+
+
+@media @tablet-widths {
+
+  .price-list__table {
+    display: table;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  .price-list__row {
+    display: table-row;
+  }
+
+  .price-list__cell {
+    display: table-cell;
+    width: auto;
+    padding: 10px;
+
+    text-align: center;
+
+    border: 1px solid @border-darkgray;
+
+    &:nth-child(1) {
+      display: table-cell;
+    }
+
+    &:nth-child(4) {
+      width: auto;
+      text-align: center;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+}
+
+@media @desktop-widths {
+
+  .price-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .price-list__header {
+    width: 100%;
+  }
+
+  .price-list__table {
+    width: 630px;
+  }
+
+  .price-list__time {
+    width: 267px;
+    padding: 0 50px;
+    padding-top: 200px;
+
+    text-align: center;
+
+    background-image: url("https://placehold.it/158x157");
+    background-position: center 30px;
+
+  }
+
 }

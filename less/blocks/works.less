@@ -5,6 +5,9 @@
 
 .works__wrapper {
   .container();
+
+  display: flex;
+  flex-direction: column;
   padding-top: 23px;
 }
 
@@ -22,4 +25,45 @@
 
 .works__to-main {
   display: none;
+}
+
+@media @tablet-widths {
+
+  .works__wrapper {
+
+  }
+
+  .works__header-wrapper {
+    position: relative;
+  }
+
+  .works__header {
+    text-align: left;
+  }
+
+  .works__to-main {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .works__wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .works__header-wrapper {
+    width: 100%;
+  }
+
 }
