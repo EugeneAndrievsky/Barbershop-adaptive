@@ -1,0 +1,78 @@
+.beard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beard__title {
+  width: 100%;
+
+  font-size: 25px;
+  line-height: 35px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.beard__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 33.33333%;
+  margin-bottom: 20px;
+
+}
+
+.beard__radio-indicator {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  background-image: url("https://placehold.it/50x50");
+}
+
+.beard__radio {
+  display: none;
+}
+
+.beard__label {
+
+  height: 120px;
+
+  text-align: center;
+
+  background-image: url("https://placehold.it/50x80");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+
+
+@media @tablet-widths {
+  .beard {
+    justify-content: space-around;
+  }
+
+  .beard__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .beard__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    margin-bottom: 20px;
+
+  }
+
+}
+
+
+@media @desktop-widths {
+
+
+
+}

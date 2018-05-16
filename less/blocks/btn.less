@@ -1,0 +1,41 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 15px 0;
+
+  width: 280px;
+  height: 50px;
+
+  border: 1px solid @border-gray;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: black;
+
+  &--to-main {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+
+  .btn {
+    &--to-main {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: block;
+      width: auto;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+
+}

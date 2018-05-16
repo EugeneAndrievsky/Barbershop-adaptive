@@ -1,0 +1,65 @@
+.add-services__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-services__title {
+  width: 100%;
+
+  font-size: 25px;
+  line-height: 35px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.add-services__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+}
+
+.add-services__checkbox-indicator {
+  width: 30px;
+  height: 30px;
+
+  background-image: url("https://placehold.it/30x30");
+}
+
+.add-services__checkbox {
+  display: none;
+}
+
+.add-services__label {
+  padding-left: 25px;
+}
+
+
+
+@media @tablet-widths {
+
+  .add-services__item {
+    width: 50%;
+    margin-bottom: 40px;
+
+  }
+
+}
+
+
+@media @desktop-widths {
+
+  .add-services__wrapper {
+    height: 140px;
+    flex-direction: column;
+  }
+
+  .add-services__item {
+    width: auto;
+    margin-bottom: 40px;
+
+  }
+
+}
