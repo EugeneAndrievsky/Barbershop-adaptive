@@ -1,12 +1,8 @@
 .work-card {
-
-  &--best {
-
-  }
+  &--best {}
 }
 
 .work-card__photo {
-
   &--best {
     position: relative;
   }
@@ -18,8 +14,8 @@
   bottom: 50px;
 
   color: white;
+  
   background-color: brown;
-
 }
 
 .work-card__desc {
@@ -33,10 +29,8 @@
   margin-top: 0;
   margin-bottom: 15px;
 
-  font-family: @font;
   font-size: 24px;
-  line-height: 27px;
-
+  line-height: 27px;  
 }
 
 .work-card__review {
@@ -47,19 +41,13 @@
   line-height: 27px;
 }
 
-.work-card__survice {
-
-}
+.work-card__survice {}
 
 
 @media @tablet-widths {
 
   .work-card {
-
-
-    &--best {
-
-    }
+    &--best {}
   }
 
   .work-card__wrapper {
@@ -75,16 +63,15 @@
     flex-shrink: 0;
     width: 270px;
     min-height: 293px; //time
-
-    &--best {
-
-    }
+    
+    &--best {}
   }
 
 }
 
 
 @media @desktop-widths {
+  
   .work-card {
     width: 294px;
 
@@ -93,23 +80,22 @@
     }
   }
 
-.work-card__wrapper {
-
+  .work-card__wrapper {
     flex-direction: column;
     padding-top: 0;
 
     &--best {
       flex-direction: row;
     }
-}
+  }
 
   .work-card__photo {
-
     min-height: 480x; //time
-
+    
     &--best {
       width: 480px;
       min-height: 293px; //time
     }
   }
+  
 }

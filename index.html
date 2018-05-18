@@ -5,7 +5,7 @@
   <title>Барбершор Бородинский</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic">
 </head>
 
@@ -37,7 +37,7 @@
       </div>
     </nav>
   </header>
-  
+
 
   <section class="stats">
 
@@ -210,22 +210,7 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.remove('main-nav--opened');
-        navMain.classList.add('main-nav--closed');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 

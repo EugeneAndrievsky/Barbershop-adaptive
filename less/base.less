@@ -1,49 +1,33 @@
 body {
+  min-width: 320px;
+
   font-size: 18px;
   line-height: 27px;
   font-family: "PT Sans Narrow", Arial, sans-serif;
-  color: #f7f4f1;
   font-style: normal;
-  
+  color: #f7f4f1;
+
   background-color: @bg-darkgray;
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  
   border: 0;
-  
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.btn {
-  display: block;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 15px 0;
-  
-  width: 280px;
-  height: 50px;
-  
-  border: 1px solid @gray;
-  
-  text-align: center;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  
-  color: black;
 }

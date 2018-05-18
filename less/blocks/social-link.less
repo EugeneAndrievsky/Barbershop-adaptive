@@ -1,42 +1,42 @@
 .social-link {
   flex-basis: 100%;
   height: 100px;
-  border: 1px solid @darkgray;  
-  
+  border: 1px solid @border-darkgray;  
+
   font-size: 0;
-  
+
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  
+
   &--vk {
     background-image: url("../img/vk-icon-big.png");
   }
-  
+
   &--fb {
     background-image: url("../img/facebook-icon-big.png");
   }
-  
+
   &--in {
     background-image: url("../img/insta-icon-big.png");
-  }  
-  
+  }
+
   &--vk:active {
     background-image: url("../img/vk-icon-big-active.png");
   }
-  
+
   &--fb:active {
     background-image: url("../img/facebook-icon-big-active.png");
   }
-  
+
   &--in:active {
     background-image: url("../img/insta-icon-big-active.png");
-  }  
-  
+  }
+
   &:hover {
     border: 1px solid #545454;
   }
 
-  &:active {     
+  &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #252525;
   }
@@ -44,22 +44,22 @@
 
 
 @media @desktop-widths {
-  
-  .social-link {    
-    flex-basis: 50px;    
-    height: 50px;     
-    
-    &--vk {    
+
+  .social-link {
+    flex-basis: 50px;
+    height: 50px;
+
+    &--vk {
       background-size: 30% ;
     }
-  
-    &--fb {    
+
+    &--fb {
       background-size: 20% ;
     }
-  
-    &--in {    
+
+    &--in {
       background-size: 40% ;
-    }  
+    }
   }
-  
+
 }

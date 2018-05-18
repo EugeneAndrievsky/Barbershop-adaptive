@@ -1,6 +1,5 @@
 .page-footer {
   margin-top: 35px;
-  border-top: 1px solid @darkgray;  
 }
 
 .page-footer__wrapper {
@@ -12,31 +11,30 @@
   margin-top: 32px;
   margin-bottom: 95px;
   padding: 0 40px;
-  
+
   text-align: center;
-  
+
   b {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 10px;
-    
   }
-  
+
   a {
     position: absolute;
     bottom: -68px;
     left: 0;
     right: 0;
-    
+
     color: white;
     background-color: @bg-darkgray;
-    border-color: @darkgray;
-    
+    border-color: @border-darkgray;
+
     &:hover {
       border: 1px solid #545454;
     }
 
-    &:active {     
+    &:active {
       color: rgba(255, 255, 255, 0.3);
       background-color: #252525;
     }
@@ -48,52 +46,49 @@
 }
 
 .page-footer__social {
-  margin-bottom: 25px;  
+  margin-bottom: 25px;
 }
 
 .page-footer__copyright {
   position: relative;
   text-align: center;
-  
+
   &-link {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    
+    margin-top: 20px;
+
     color: white;
     background-color: @bg-darkgray;
-    border-color: @darkgray;
-    
+    border-color: @border-darkgray;
+
     &:hover {
       border: 1px solid #545454;
     }
 
-    &:active {     
+    &:active {
       color: rgba(255, 255, 255, 0.3);
       background-color: #252525;
     }
-  }  
+  }
 }
 
-@media @tablet-widths {  
-  
+@media @tablet-widths {
+
   .page-footer__wrapper {
     position: relative;
   }
-  
-  .page-footer__contacts {    
+
+  .page-footer__contacts {
     margin-top: 10px;
     margin-bottom: 50px;
     padding: 0;
-  
+
     text-align: left;
-    
+
     b {
       text-transform: uppercase;
       margin-bottom: 10px;
-    }  
-    
+    }
+
     a {
       position: static;
       display: inline;
@@ -102,72 +97,63 @@
       background: none;
       text-transform: none;
       font-weight: normal;
-      
+
       &:hover {
         border: none;
       }
 
-      &:active {     
+      &:active {
         color: white;
         background-color: @bg-darkgray;
       }
     }
   }
-  
+
   .page-footer__contacts-hidden {
-    display: inline;     
+    display: inline;
   }
-  
+
   .page-footer__copyright {
     position: absolute;
     right: 37px;
     top: -17px;
-  
+
     &-link {
       position: absolute;
       top: 40px;
       left: auto;
       right: -40px;
-      width: 160px;    
-    
+      width: 160px;
+
       color: white;
       background-color: @bg-darkgray;
-      border-color: @darkgray;
-    }  
+      border-color: @border-darkgray;
+    }
   }
-  
+
 }
 
+
 @media @desktop-widths {
-  
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .page-footer__social {
     margin-top: 10px;
   }
-  
+
   .page-footer__copyright {
-    position: static;    
-    margin-top: 10px;    
-  
+    position: static;
+
+    margin-top: 10px;
+
     &-link {
-      position: static;   
+      position: static;
       margin-top: 15px;
-      
-    }  
+    }
   }
-  
+
 }
-
-
-
-
-
-
-
-
-
-

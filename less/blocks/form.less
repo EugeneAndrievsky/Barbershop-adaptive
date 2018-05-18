@@ -1,17 +1,12 @@
-.form {
+.form {}
 
-}
-
-.form__wrapper {
-
-}
+.form__wrapper {}
 
 .form__info {
   margin-bottom: 25px;
 }
 
 .form__group {
-
   & + & {
     padding-top: 25px;
   }
@@ -55,27 +50,24 @@
 
 
 @media @desktop-widths {
+
   .form__group {
     display: flex;
     justify-content: space-between;
-
-    &--fio {
-      & > .form__input {
-        width: 293px;
-        border: 1px solid gray;
-      }
-    }
-
-    &--contacts {
-      & > .form__input {
-        width: 460px;
-      }
-    }
   }
 
   .form__input {
     box-sizing: border-box;
     height: 70px;
+  }
+
+  .form__group--fio > .form__input {
+    width: 293px;
+    border: 1px solid gray;
+  }
+
+  .form__group--contacts > .form__input {
+    width: 460px;
   }
 
 }
