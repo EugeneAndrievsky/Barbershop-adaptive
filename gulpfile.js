@@ -17,6 +17,7 @@ var include = require('posthtml-include');
 var del = require('del');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
+var ghPages = require('gulp-gh-pages');
 
 
 gulp.task('style', function () {
@@ -146,3 +147,9 @@ gulp.task('build', gulp.series(
     'html'
   )
 ));
+
+
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*")
+    .pipe(ghPages());
+});
