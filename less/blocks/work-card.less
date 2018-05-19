@@ -9,20 +9,51 @@
 }
 
 .work-card__label {
-  //временно
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
 
+  padding: 12px;
+  padding-left: 25px;
+  padding-right: 19px;
+
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: white;
-  
-  background-color: brown;
+
+  background-color: @brown;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: -9px;
+    top: 0;
+
+    border-top: 25px solid @brown;
+    border-bottom: 25px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+  }
+
+  &::after {
+    border-top-color: transparent;
+    border-bottom-color: @brown;
+  }
+
 }
 
 .work-card__desc {
+  box-sizing: border-box;
+  width: 100%;
   padding-top: 18px;
   padding-left: 23px;
   padding-right: 23px;
   padding-bottom: 25px;
+
+  border: 1px solid #e5ddd5;
+  border-top: none;
 }
 
 .work-card__header {
@@ -30,7 +61,7 @@
   margin-bottom: 15px;
 
   font-size: 24px;
-  line-height: 27px;  
+  line-height: 27px;
 }
 
 .work-card__review {
@@ -41,7 +72,66 @@
   line-height: 27px;
 }
 
-.work-card__survice {}
+.work-card__services {
+  position: relative;
+  left: -23px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 280px;
+
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  background-color: rgba(255,0,0,0.1);
+}
+
+.work-card__service {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 50%;
+  margin-bottom: 15px;
+  padding-left: 55px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 23px;
+
+    width: 25px;
+    height: 22px;
+
+    background-image: url("http://placehold.it/25x22");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--mustache {
+    padding-left: 65px;
+
+    &::before {
+      left: 10px;
+
+      width: 50px;
+
+      background-image: url("http://placehold.it/48x22");
+    }
+  }
+
+  &--beard {
+    &::before {
+      left: 10px;
+
+      width: 25px;
+
+      background-image: url("http://placehold.it/25x22");
+    }
+  }
+}
 
 
 @media @tablet-widths {
@@ -63,7 +153,7 @@
     flex-shrink: 0;
     width: 270px;
     min-height: 293px; //time
-    
+
     &--best {}
   }
 
@@ -71,7 +161,7 @@
 
 
 @media @desktop-widths {
-  
+
   .work-card {
     width: 294px;
 
@@ -91,11 +181,11 @@
 
   .work-card__photo {
     min-height: 480x; //time
-    
+
     &--best {
       width: 480px;
       min-height: 293px; //time
     }
   }
-  
+
 }
