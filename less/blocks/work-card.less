@@ -8,6 +8,16 @@
   }
 }
 
+.work-card__photo img {
+  width: 280px;
+  height: 174px;
+}
+
+.work-card__photo--best img {
+  width: 280px;
+  height: 480px;
+}
+
 .work-card__label {
   position: absolute;
   bottom: 30px;
@@ -47,13 +57,20 @@
 .work-card__desc {
   box-sizing: border-box;
   width: 100%;
-  padding-top: 18px;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-right: 30px;
+  padding-bottom: 16px;
 
   border: 1px solid #e5ddd5;
   border-top: none;
+
+  &--best {
+    padding-top: 18px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 0;
+  }
 }
 
 .work-card__header {
@@ -85,7 +102,7 @@
   line-height: 27px;
   text-transform: uppercase;
 
-  background-color: rgba(255,0,0,0.1);
+  background-color: rgba(255, 0, 0, 0.1); //time
 }
 
 .work-card__service {
@@ -93,7 +110,7 @@
 
   box-sizing: border-box;
   width: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding-left: 55px;
 
   &::before {
@@ -142,19 +159,115 @@
 
   .work-card__wrapper {
     display: flex;
-    padding-top: 40px;
+  }
+
+  .work-card__photo--best {
+    width: 270px;
+  }
+
+  .work-card__photo img {
+    flex-shrink: 0;
+    width: 270px;
+    height: 293px;
+  }
+
+  .work-card__photo--best img {
+    width: 270px;
+    height: 480px;
+  }
+
+  .work-card__label {
+    top: 35px;
+    left: -2px;
+    bottom: auto;
+
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+
+  .work-card__desc {
+    width: 370px;
+
+    padding-top: 38px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+
+    border: 1px solid #e5ddd5;
+    border-left: none;
 
     &--best {
-      padding-top: 0;
+      padding-top: 42px;
     }
   }
 
-  .work-card__photo {
-    flex-shrink: 0;
-    width: 270px;
-    min-height: 293px; //time
+  .work-card__header {
+    margin-top: 0;
+    margin-bottom: 26px;
+  }
 
-    &--best {}
+  .work-card__review {
+    width: 230px;
+    height: 118px;
+
+    &--best {
+      width: auto;
+      height: 266px;
+    }
+  }
+
+  .work-card__services {
+    position: static;
+
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .work-card__service {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 130px;
+    margin-bottom: 15px;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+      width: 25px;
+      height: 22px;
+
+      background-image: url("http://placehold.it/25x22");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &--mustache {
+      padding-left: 47px;
+
+      &::before {
+        left: -10px;
+
+        width: 50px;
+
+        background-image: url("http://placehold.it/48x22");
+      }
+    }
+
+    &--beard {
+      padding-left: 44px;
+
+      &::before {
+        left: 0;
+
+        width: 25px;
+
+        background-image: url("http://placehold.it/25x22");
+      }
+    }
   }
 
 }
@@ -163,7 +276,7 @@
 @media @desktop-widths {
 
   .work-card {
-    width: 294px;
+    width: 293px;
 
     &--best {
       width: 100%;
@@ -171,6 +284,8 @@
   }
 
   .work-card__wrapper {
+    position: relative;
+
     flex-direction: column;
     padding-top: 0;
 
@@ -180,11 +295,70 @@
   }
 
   .work-card__photo {
-    min-height: 480x; //time
+    position: static;
+    width: 293px;
 
     &--best {
       width: 480px;
-      min-height: 293px; //time
+    }
+  }
+
+  .work-card__photo img {
+    width: 293px;
+    height: 293px;
+  }
+
+  .work-card__photo--best img {
+    width: 480px;
+    height: 480px;
+  }
+
+  .work-card__label {
+    top: 25px;
+    left: auto;
+    right: 0;
+
+    &::before,
+    &::after {
+      top: 0;
+      left: -9px;
+      right: auto;
+    }
+  }
+
+  .work-card__desc {
+    width: 293px;
+    padding-top: 28px;
+    padding-left: 35px;
+    padding-right: 30px;
+
+    border: 1px solid #e5ddd5;
+    border-top: none;
+
+    &--best {
+      width: 480px;
+      padding-top: 127px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 0;
+    }
+  }
+
+  .work-card__review {
+    width: auto;
+    height: 92px;
+
+    &--best {
+      width: 300px;
+      height: 228px;
+    }
+  }
+
+  .work-card__service {
+    width: 50%;
+
+    &--best {
+      width: 130px;
     }
   }
 
