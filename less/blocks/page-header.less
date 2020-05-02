@@ -32,15 +32,15 @@
     height: 400px;
 
     background-color: #000;
-    background-image: url("../img/bg-header.jpg");
+    background-image: url("../img/bg-tablet-inner.jpg");
     background-repeat: no-repeat;
-    background-position: center -210px;
+    background-position: center -70px;
 
     overflow: hidden;
 
-    @media @retina {
-      background-image: url("../img/bg-header-2x.jpg");
-      background-size: 1338px auto;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-tablet-inner@2x.jpg");
+      background-size: 1200px auto;
     }
   }
 
@@ -93,8 +93,13 @@
   .page-header__logo {
     height: 648px;
 
+    background-image: url("../img/bg-desktop-inner.jpg");
     background-position: center -70px;
-    background-size: cover;
+
+    @media @retina {
+      background-image: url("../img/bg-desktop-inner@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 
   .page-header__logo--inner {
