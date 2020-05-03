@@ -1,5 +1,7 @@
 .page-footer {
   margin-top: 35px;
+
+  background-color: @bg-darkgray-footer;
 }
 
 .page-footer__wrapper {
@@ -27,7 +29,7 @@
     right: 0;
 
     color: white;
-    background-color: @bg-darkgray;
+    background-color: @bg-darkgray-footer;
     border-color: @border-darkgray;
 
     &:hover {
@@ -57,7 +59,7 @@
     margin-top: 20px;
 
     color: white;
-    background-color: @bg-darkgray;
+    background-color: @bg-darkgray-footer;
     border-color: @border-darkgray;
 
     &:hover {
@@ -72,13 +74,17 @@
 }
 
 @media @tablet-widths {
+  .page-footer {
+    margin-top: 0;
+    padding-top: 50px;
+  }
 
   .page-footer__wrapper {
     position: relative;
   }
 
   .page-footer__contacts {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 50px;
     padding: 0;
 
@@ -104,7 +110,7 @@
 
       &:active {
         color: white;
-        background-color: @bg-darkgray;
+        background-color: @bg-darkgray-footer;
       }
     }
   }
@@ -126,7 +132,7 @@
       width: 160px;
 
       color: white;
-      background-color: @bg-darkgray;
+      background-color: @bg-darkgray-footer;
       border-color: @border-darkgray;
     }
   }
@@ -135,7 +141,6 @@
 
 
 @media @desktop-widths {
-
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
