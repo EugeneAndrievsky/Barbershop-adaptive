@@ -122,20 +122,26 @@
     width: 25px;
     height: 22px;
 
-    background-image: url("http://placehold.it/25x22");
     background-position: 0 0;
     background-repeat: no-repeat;
+  }
+
+  &--hair {
+    &::before {
+      background-image: url("../img/icon-scissors.svg");
+    }
   }
 
   &--mustache {
     padding-left: 65px;
 
     &::before {
+      top: 7px;
       left: 10px;
 
-      width: 50px;
+      width: 48px;
 
-      background-image: url("http://placehold.it/48x22");
+      background-image: url("../img/icon-mustache.svg");
     }
   }
 
@@ -145,7 +151,7 @@
 
       width: 25px;
 
-      background-image: url("http://placehold.it/25x22");
+      background-image: url("../img/icon-beard-1.svg");
     }
   }
 }
@@ -239,21 +245,24 @@
 
       width: 25px;
       height: 22px;
+    }
 
-      background-image: url("http://placehold.it/25x22");
-      background-position: 0 0;
-      background-repeat: no-repeat;
+    &--hair {
+      &::before {
+        background-image: url("../img/icon-scissors.svg");
+      }
     }
 
     &--mustache {
       padding-left: 47px;
 
       &::before {
+        top: 7px;
         left: -10px;
 
-        width: 50px;
+        width: 48px;
 
-        background-image: url("http://placehold.it/48x22");
+        background-image: url("../img/icon-mustache.svg");
       }
     }
 
@@ -265,7 +274,7 @@
 
         width: 25px;
 
-        background-image: url("http://placehold.it/25x22");
+        background-image: url("../img/icon-beard-1.svg");
       }
     }
   }
